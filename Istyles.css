@@ -1,0 +1,746 @@
+/* Universal code */
+*{
+    background: #1E1E1E;
+    Margin:0px;
+    padding: 0px;
+    
+    }
+    /* NavBar Styles */
+    .nav-pc{
+        margin:20px 0 0 20px;
+    
+    }
+    /* Setting the mobile navbar to not appear */
+    .nav-mobile{
+        display: none;
+    }
+    /* SearchBar styles */
+    input{
+        border-width: 0px;
+        Color:white;
+        font-family:Quicksand,sans-serif ;
+        font-weight: 600;
+    }
+    label{
+        margin-left: 40px;
+        margin-right: 20px;
+        margin-top: -40px;
+    }
+    
+    
+    input:focus{
+        outline: none;
+    }
+    input::placeholder{
+        font-size:18px;
+    }
+    .search{
+        width: 4vw;
+        height: 3vh;
+    }
+    /* Fonts */
+    @font-face {
+        font-family: Quicksand;
+        src: url(Quicksand-Bold.ttf);
+    }
+    @font-face {
+        font-family: Quicksand-light;
+        src: url(Quicksand-Light.ttf);
+    }
+    
+    @font-face {
+        font-family: Quicksand-Semi;
+        src: url(Quicksand-SemiBold.ttf);
+    }
+    
+    @font-face {
+        font-family: Quicksand-Medium;
+        src: url(Quicksand-Medium.ttf);
+    }
+    
+    @font-face {
+        font-family: Quicksand-Regular;
+        src: url(Quicksand-Regular.ttf);
+    }
+    /* Aside content structure */
+    .aside1{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        height:230px;
+        width:52px;
+        justify-content: space-evenly;
+        border-radius:32px;
+        background: #1A1E1F;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .aside2{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        justify-content: space-evenly;
+        height:100px;
+        width:52px;
+        border-radius:32px;
+        background: #1A1E1F;
+        margin-bottom: 0px;
+    }
+    /* sizing the aside items with the classes of clicks and clickss */
+    .clicks{
+        width:20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .clickss{
+        width:50px;
+        margin-left: -7px;
+    }
+    svg{
+       stroke:none;
+       fill-opacity:1;
+       width:20px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .heart,.heartt,.hearttt{
+        stroke:none;
+        fill:none;
+        fill-opacity:1;
+        width:20px;
+        background: #fff;
+        transition: 0.1s;
+    }
+    /* Hide the mobile Navbar */
+    .aside3{
+        display: none;
+    }
+    /* Styles for the curated playlist section */
+    .rectangle{
+        height: 343px;
+        width: 686px;
+        left: 100px;
+        top: 80px;
+        border-radius: 40px;
+        position: absolute;
+        background: url(/Assets/Vector.svg);
+        background-color: #609EAF;
+        background-repeat: no-repeat;
+        background-position: 100%;
+        display: flex;
+        overflow: hidden;
+    }
+    .playlist{
+        margin-top: 38px;
+        margin-left: 45px;
+        background-color: transparent;
+        font-family:quicksand-Regular,sans-serif;
+        Color:white;
+        font-size: 0.75em;
+        font-weight: 400;
+    }
+    button{
+        background: none;
+        border-width: 0px;
+    }
+    .rnb{
+        margin-top:70px;
+        margin-left: 45px;
+        background-color: transparent;
+        font-family:quicksand-Regular,sans-serif;
+        Color:white;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    /* Setting the first layer to flexbox */
+    .rnbcon{
+        display: flex;
+        margin: 0;
+    }
+    /* Aligning the text of the section */
+    .rnbtext{
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        animation: downdrop 1s forwards;
+    }
+    @keyframes downdrop {
+        from{
+            transform:translateY(-400px) ;
+        }
+        to{
+            transform:translateY(0px) ;
+        }
+    }
+    .all{
+        margin-left: 45px;
+        background-color: transparent;
+        font-family:quicksand-Regular,sans-serif;
+        Color:white;
+        font-size: 0.8em;
+        font-weight: 400;
+        width:295px;
+    }
+    /* Image in rectangle and animations for the image */
+    .size{
+        height:100%;
+        background: transparent;
+        animation: drop 1s forwards;
+    }
+    @keyframes drop{
+        from{
+            transform: translateY(400px);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        
+    }
+    /* likes and users portion */
+    .ellipsis{
+        background: transparent;
+        width: 50%;
+        margin-left: 50px;
+        margin-top:40px;
+    }
+    /* "Top charts" heading */
+        h1{
+            font-weight: 700;
+            font-size: 24px;
+            color:white;
+            font-family: quicksand,sans-serif;
+          position: absolute;
+            top:75px;
+            background: transparent;
+            left:810px;
+        }
+       
+        /* charts styling */
+        
+        .charts1{
+            width:29%;
+            height:86px;
+            border-radius:20px;
+            background-color: #1A1616;
+        position: absolute;
+            left:810px;
+            top:115px;
+            display: flex;
+        }
+        .charts2{
+            width:29%;
+            height:86px;
+            border-radius:20px;
+            background-color: #1A1616;
+            position: absolute;
+            left:810px;
+            top:215px;
+            display: flex;
+        }
+        .charts3{
+            width:29%;
+            height:86px;
+            border-radius:20px;
+            background-color: #1A1616;
+            position: absolute;
+            left:810px;
+            top:315px;
+            display: flex;
+        }
+        .cover1{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 15px;
+            background: transparent;
+        }
+        /* Aligning the chart content */
+        .cover1text,
+        .cover2text,
+        .cover3text{
+            display: flex;
+            flex-direction: column;
+            background: transparent;
+        }
+        /* Sizing and aligning the chart text */
+       h3{
+        background: transparent;
+        color:white;
+        font-size: 17px;
+        font-weight: 400;
+        font-family: quicksand-Regular,sans-serif;
+        margin-top:10px;
+        margin-left: 14px;
+       }
+       h4{
+        background: transparent;
+        color:rgba(255, 255, 255, 0.5);
+        font-size: 12px;
+        font-weight: 200;
+        font-family: quicksand-Regular,sans-serif;
+        margin-top:5px;
+        margin-left: 14px;
+       }
+       h3:hover{
+        cursor: pointer;
+       }
+       span{
+       background: transparent;
+       color:rgba(255, 255, 255, 1);
+       font-size: 13px;
+       font-weight: 200;
+       font-family: quicksand-Regular,sans-serif;
+       margin-top:5px;
+       margin-left: 14px;
+       }
+       /* Styling the heart icons */
+       .heart{
+        width:18px;
+        padding:0px;
+        background: transparent;
+        border:  solid rgba(255, 255, 255, 0.11);
+        border-radius: 50%;
+        margin:auto 0px auto 90px;
+        padding:5px;
+       }
+       .heartt{
+        width:18px;
+        padding:0px;
+        background: transparent;
+        border:  solid rgba(255, 255, 255, 0.11);
+        border-radius: 50%;
+        margin:auto 0;
+        margin-left: 100px;
+        padding:5px;
+       }
+       .hearttt{
+        width:18px;
+        padding:0px;
+        background: transparent;
+        border:  solid rgba(255, 255, 255, 0.11);
+        border-radius: 50%;
+    
+        margin:auto 0;
+        margin-left: 90px;
+        padding:5px;
+       }
+       /* Styling the new releases section */
+       h2{
+        background: transparent;
+        color:white;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: quicksand-Regular,sans-serif;
+        margin-top:30px;
+        margin-left: 100px;
+       }
+       .new{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+       }
+       .popular{
+        margin-bottom: 6.1rem;
+       }
+       .newreleases{
+        display: flex;
+        flex-shrink: 0;
+        gap: 2em;
+        margin-left: 100px;
+        overflow: hidden;
+        overflow-x: scroll;
+       }
+       .newreleases::-webkit-scrollbar{
+        height: 0px;
+       }
+       .release{
+        height:153px;
+        width:153px;
+        border-radius:25px;
+        margin-top: 12px;
+       }
+       .controlbar{
+       width:100%;
+       position: fixed;
+       height: 6rem;
+       bottom: 0;
+       background: rgba(30, 30, 30,0.54);
+       backdrop-filter:blur(7px);
+       border-top: 0.5px solid grey;
+       display: flex;
+       }
+       .connp{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        background: transparent;
+        margin-left: 40px;
+       }
+       .controlr{
+        height:90%;
+        /* width:80%; */
+        border-radius: 15px;
+        background: transparent;
+        margin-left: 80px;
+        margin-top: auto;
+        margin-bottom: auto;
+       }
+       .controlnama{
+        background: transparent;
+        /* margin: auto 0; */
+        display: flex;
+       }
+       .context{
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        margin-left: 10px;
+       }
+       .context h5{
+        background: transparent;
+        font-family: quicksand-regular,sans-serif;
+        font-weight: 600;
+        color: rgb(199, 197, 197);
+        cursor: pointer;
+       }
+       .context h3{
+        background: transparent;
+        font-family: quicksand-regular,sans-serif;
+        font-weight: 400;
+        color: #Fff;
+        margin-left: 0px;
+        cursor:initial;
+       }
+       .controls{
+        display: flex;
+        background: transparent;
+        justify-content: space-evenly;
+        width: 300px;
+        margin:0 32% ;
+        margin-top: -0.5rem;
+       }
+       .controls img{
+        background: transparent;
+       }
+       .volume{
+        background: transparent;
+        margin: 0;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 100px;
+        fill:#Fff;
+       }
+       input[type="range"] {
+        background-color: #facd66;;
+        margin-left: 45px;
+        width: 45vw;
+        height: 4px;
+        fill: #facd66;
+        border-radius: 5px;
+        background: transparent;
+        cursor: pointer;
+      }
+       
+      input::-webkit-slider-thumb{
+       opacity: 0;
+       color: #facd66;
+      }
+      input:active::-webkit-slider-thumb {
+        opacity: 1;
+        color: #facd66;
+      } 
+      input::-webkit-slider-runnable-track{
+        fill:rgba(250, 205, 102, 1);
+        border-radius: 50px;
+      }
+      input[type="range"]::-ms-fill-lower{
+        background-color: #facd66;
+      }
+      input[type="range"]::-ms-fill-upper{
+        background-color: #facd66;
+      }
+    
+      .vcontrol input[type="range"] {
+        width: 100px;
+        height: 4px;
+        fill: rgba(250, 205, 102, 1);
+        border-radius: 25px;
+        background: transparent;
+        cursor: pointer;
+        position: absolute;
+        margin-top: 27px;
+        margin-left: 0px;
+      }
+      
+      .vcontrol{
+        background: transparent;
+        position: relative;
+      }
+      .shuffle,.back,.play,.next,.redo{
+        cursor: pointer;
+      }
+       
+    @media screen and (max-width:950px)  {
+    body{
+        height: 100%;
+    }
+    
+        /* Setting the pc navbar to no longer display and the mobile to display */
+        .nav-pc{
+            display: none;
+        }
+        .nav-mobile{
+            display: block;
+            margin: auto;
+            margin-top:-50px;
+            margin-left: 20px;
+            margin-right:60px ;
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+            box-sizing: content-box;
+            padding: 10px;
+        }
+        .mobileview{
+            margin-top: 50px;
+        }
+        /* setting the search bar placeholder to nothing */
+        input::placeholder{
+            opacity: 0;
+        }
+        /* Adjusting The logo */
+        .logoo{
+            margin-left: 20px;
+            height:24px;
+            width:24px; 
+        }
+        /* Adjusting the Search Bar */
+        .searchh{
+            width:7%;
+        }
+        input{
+            border-width: 0px;
+            Color:white;
+            font-family:Quicksand,sans-serif ;
+            font-weight: 600;
+            Margin-left:20px
+        }
+        /* Hide aside tag and content */
+        .aside1,.aside2{
+            display: none;
+        }
+        /* Setting the navigation bar to take up the whole screen */
+        .aside3{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            width:81vw;
+            height:94vh;
+            transform: translateY(-50px);
+            transform: translateX(-700px);
+            position:fixed;
+            z-index: 2;
+        }
+        .rectangle{
+            height: 58%;
+            width: 100%;
+            left: 100px;
+            top: 100px;
+            border-radius: 12px;
+            position: static;
+            background: url(/Assets/vmobile.svg);
+            background-color: #609EAF;
+            background-repeat: no-repeat;
+            background-position: 100%;
+            background-size: cover;
+            display: flex;
+            overflow: hidden;
+        }
+        .all{
+            margin-left: 45px;
+            background-color: transparent;
+            font-family:quicksand-Regular;
+            Color:white;
+            font-size: 0.8em;
+            font-weight: 400;
+            width:fit-content;
+        }
+    
+        .rnbcon{
+           
+            width:100%
+        }
+        .rnb{
+            margin: 0;
+        }
+        
+        /* Sizing the icons and text in the mobile navBar */
+        .clicksm{
+        width:40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        }
+        .sizes{
+        font-family: Quicksand,sans-serif;
+        color: #EFEEE040;
+        background: transparent;
+        margin-top: 40px;
+        font-size: 1.5em;
+        transition: 0.4s;
+        margin-left: 10px;
+        }
+     
+    /*  setting the text of the navigation bar icons beside each other */
+        .icon{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            margin-right: auto;
+            margin-left: 10px;
+            }
+            /* setting the text of the navbar to be white when focused */
+            .sizes:hover{
+                font-family: Quicksand,sans-serif;
+                color: #FFFFFF;
+                background: transparent;
+                margin-top: 40px;
+                font-size: 1.6em;
+                transition: 0.4s;
+            }
+            .rectangle{
+                width:80%;
+                margin:0 auto;
+                position: static;
+            }
+            .rnb{
+                margin-top:60%;
+                margin-left: 45px;
+                background-color: transparent;
+                font-family:quicksand-Regular,sans-serif;
+                Color:white;
+                font-size: 2em;
+                font-weight: 700;
+            }
+            br{
+                display: none;
+            }
+            .ellipsis{
+                width:80%;
+                margin: 0;
+                margin-left:auto ;
+              margin-right: auto;
+              margin-top: 50px;
+              padding-bottom: 10px;
+            }
+            
+            .size{
+                display: none;
+            }
+           h1{
+            position: static;
+            margin-bottom: -40px;
+            margin-top: 20px;
+            margin-left: 40px;
+           }
+            .chart{
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+            }
+            .charts1,.charts2,.charts3{
+                height:30vh;
+                width:70vw;
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+                color: #353535;
+                position: static;
+            }
+            .playlist{
+                margin-left: 10%;
+            }
+            .cover1{
+                width: 40%;
+                margin: 20px 0 0 20px;
+            }
+            .heart,.heartt,.hearttt{
+                margin-top:-20vh;
+                margin-left: auto;
+                margin-right: 20px;
+            }
+            .heart:focus{
+                fill: #facd66;
+            }
+            h3,h4,span{
+               margin: 0;
+            }
+         
+            .cover1text,.cover2text,.cover3text{
+                margin-left: 20px;
+                margin-top: 10px;
+            }
+            .charts{
+                display: flex;
+                gap: 1em;
+                overflow: hidden;
+                overflow-x: scroll;
+                overflow-y: visible;
+                margin-top: 60px;
+                margin-left: 40PX;
+            }
+            .charts::-webkit-scrollbar{
+                height: 0px;
+            }
+            .newreleases{
+                margin-left: 40px;
+            }
+            h2{
+                margin-left: 40px;
+    
+            }
+            .release{
+                height: 120px;
+                width: 120px;
+                border-radius: 15px;
+            }
+            .shuffle,.back,.redo{
+                display: none;
+            }
+            .vcontrol{
+                display: none;
+            }
+            .connp input{
+                display: none;
+            }
+            .controlnama h3{
+                font-size: 1em;
+                text-align: start;
+                width: 100px;
+                margin-top: 20px;
+            }
+            .controlr{
+                /* height:50%; */
+                width:50%;
+                margin-left: 20px;
+            }
+            .controls{
+                margin-top: 15px;
+            }
+
+            .connp{
+                display: block;
+                background: transparent;
+                width: 20%;
+                margin: 0;
+               }
+            .play{
+                margin-left: -200px;
+            }
+            .next{
+                margin-left: -200px;
+                margin-right: 20px;
+            }
+    }
