@@ -480,7 +480,11 @@
       .shuffle,.back,.play,.next,.redo{
         cursor: pointer;
       }
-       
+        .pause{
+        width:35px;
+        margin-left: -40px;
+      }
+              
     @media screen and (max-width:950px)  {
     body{
         height: 100%;
@@ -736,11 +740,17 @@
                 width: 20%;
                 margin: 0;
                }
-            .play{
+                .play{
                 margin-left: -200px;
             }
             .next{
-                margin-left: -200px;
+                margin-left: -400px;
                 margin-right: 20px;
             }
+            .pause{
+                width:35px;
+                margin-left: -600px;
+              }
+
+        
     }
