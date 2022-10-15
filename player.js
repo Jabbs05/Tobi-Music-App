@@ -57,6 +57,16 @@ function tack(){
 }
 heart3.addEventListener('click',tack)
 
+var jolt = document.querySelector('audio')
+
+function play(){
+    jolt.play()
+   
+}
+function pause(){    
+        jolt.pause()    
+        }
+
 
 
 
