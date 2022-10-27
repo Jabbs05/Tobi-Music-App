@@ -28,7 +28,7 @@ function tick(){
 }
 heart1.addEventListener('click',tick)
 
-//Second Chart Click Animation
+//Second Chart heart Click Animation
 const heart2 = document.querySelector('.hearttt')
 
 function tock(){
@@ -43,8 +43,8 @@ function tock(){
 }
 heart2.addEventListener('click',tock)
 
+//Third Chart heart Click Animation
 const heart3 = document.querySelector('.heart')
-
 function tack(){
     if (heart3.style.fill === "none") {
         heart3.style.fill = "#facd66";
@@ -66,7 +66,25 @@ function play(){
 function pause(){    
         jolt.pause()    
         }
+// First Page Switching Animation
+const tod = document.querySelector('.today')
+const one = document.querySelector('.container')
+const two = document.querySelector('.container2')
+const navm = document.querySelector('.nav-mobile')
 
-
-
-
+function change(){
+if (two.style.display === "none") {
+    two.style.display = "block"
+    one.style.display = "none"
+    two.style.opacity = "1"
+    two.style.transition = "1s"
+    rt.style.display = "block"
+    // navm.style.background = "transparent"
+} else {
+    two.style.display = "none"
+    one.style.display = "block"
+    one.style.transition = "0.5s"
+    two.style.transition = "0.5s"
+}
+}
+tod.addEventListener('click',change)
